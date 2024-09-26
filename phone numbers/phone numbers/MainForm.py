@@ -13,6 +13,7 @@ class MainForm(Form):
         self._button2 = System.Windows.Forms.Button()
         self._button3 = System.Windows.Forms.Button()
         self._textBox1 = System.Windows.Forms.TextBox()
+        self._textBox2 = System.Windows.Forms.TextBox()
         self.SuspendLayout()
         # 
         # button1
@@ -47,15 +48,23 @@ class MainForm(Form):
         # 
         # textBox1
         # 
-        self._textBox1.Location = System.Drawing.Point(13, 13)
+        self._textBox1.Location = System.Drawing.Point(12, 35)
         self._textBox1.Name = "textBox1"
-        self._textBox1.Size = System.Drawing.Size(873, 31)
+        self._textBox1.Size = System.Drawing.Size(885, 31)
         self._textBox1.TabIndex = 4
+        # 
+        # textBox2
+        # 
+        self._textBox2.Location = System.Drawing.Point(12, 73)
+        self._textBox2.Name = "textBox2"
+        self._textBox2.Size = System.Drawing.Size(885, 31)
+        self._textBox2.TabIndex = 5
         # 
         # MainForm
         # 
         self.BackColor = System.Drawing.SystemColors.ActiveBorder
         self.ClientSize = System.Drawing.Size(909, 446)
+        self.Controls.Add(self._textBox2)
         self.Controls.Add(self._textBox1)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
@@ -68,10 +77,12 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        self._textBox1.Text = "Noodles & company - 608 756 9700 Target - 608 754 8331"
+        self._textBox1.Text = "Noodles & company - 608 756 9700 , Target - 608 754 8331 , Game Stop - 08 758 9337"
+        self._textBox2.Text = "olive Garden - 608 758 2848 , Walmart - 608 754 7800"
         
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
+        self._textBox2.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()
