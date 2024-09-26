@@ -25,7 +25,7 @@ class MainForm(Form):
         self._label1.Name = "label1"
         self._label1.Size = System.Drawing.Size(873, 253)
         self._label1.TabIndex = 0
-        self._label1.Text = "label1"
+        self._label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
         # button1
         # 
@@ -92,6 +92,7 @@ class MainForm(Form):
         # 
         # MainForm
         # 
+        self.BackColor = System.Drawing.Color.Black
         self.ClientSize = System.Drawing.Size(909, 446)
         self.Controls.Add(self._button7)
         self.Controls.Add(self._button6)
@@ -101,6 +102,7 @@ class MainForm(Form):
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
         self.Controls.Add(self._label1)
+        self.Font = System.Drawing.Font("Microsoft Sans Serif", 15.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self.Name = "MainForm"
         self.Text = "phone numbers"
         self.ResumeLayout(False)
