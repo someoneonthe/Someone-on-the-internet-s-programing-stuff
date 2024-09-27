@@ -145,7 +145,7 @@ class MainForm(Form):
         perim = 2 * length + 2 * width
         self._label5.Text = str(area)
         self._label6.Text = str(perim)
-        # + - * / %     ** (power // (divide and round down)
+        # + - * / %     ** (power) // (divide and round down)
         # int (interger) : a whole nember, pos/neg
         #float ( decmals)
         # str (string): string of text
