@@ -1,0 +1,10 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\lp 4-1.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\lp 4-1.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\lp 4-1.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\obj\Debug\lp 4-1.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\lp 4-1\lp 4-1\obj\Debug\lp 4-1.exe

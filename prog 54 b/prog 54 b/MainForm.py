@@ -180,8 +180,8 @@ class MainForm(Form):
         d = int(self._textBox4.Text)
         S = a + b + c + d
         A = (a + b + c + d) // 4
-        self._label1.Text = str(A)
-        self._label2.Text = str(S)
+        self._label1.Text = str(S)
+        self._label2.Text = str(A)
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
