@@ -91,22 +91,24 @@ class MainForm(Form):
         # 
         # button1
         # 
+        self._button1.BackColor = System.Drawing.SystemColors.ButtonHighlight
         self._button1.Location = System.Drawing.Point(26, 83)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(153, 72)
         self._button1.TabIndex = 7
         self._button1.Text = "Calculate"
-        self._button1.UseVisualStyleBackColor = True
+        self._button1.UseVisualStyleBackColor = False
         self._button1.Click += self.Button1Click
         # 
         # button2
         # 
+        self._button2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         self._button2.Location = System.Drawing.Point(270, 83)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(153, 72)
         self._button2.TabIndex = 8
         self._button2.Text = "Clear"
-        self._button2.UseVisualStyleBackColor = True
+        self._button2.UseVisualStyleBackColor = False
         self._button2.Click += self.Button2Click
         # 
         # button3
@@ -180,7 +182,9 @@ class MainForm(Form):
         self._label7.Text = str(mpg)
 
     def Button2Click(self, sender, e):
-        pass
+       self._label5.Text = ""
+       self._label6.Text = ""
+       self._label7.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()

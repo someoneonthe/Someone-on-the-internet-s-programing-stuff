@@ -21,6 +21,8 @@ class MainForm(Form):
         self._label4 = System.Windows.Forms.Label()
         self._label5 = System.Windows.Forms.Label()
         self._button4 = System.Windows.Forms.Button()
+        self._label6 = System.Windows.Forms.Label()
+        self._label7 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # textBox1
@@ -46,21 +48,23 @@ class MainForm(Form):
         # 
         # label1
         # 
-        self._label1.Location = System.Drawing.Point(156, 161)
+        self._label1.BackColor = System.Drawing.SystemColors.Control
+        self._label1.Location = System.Drawing.Point(130, 141)
         self._label1.Name = "label1"
         self._label1.Size = System.Drawing.Size(54, 23)
         self._label1.TabIndex = 3
         # 
         # label2
         # 
-        self._label2.Location = System.Drawing.Point(156, 203)
+        self._label2.BackColor = System.Drawing.SystemColors.Control
+        self._label2.Location = System.Drawing.Point(130, 181)
         self._label2.Name = "label2"
         self._label2.Size = System.Drawing.Size(54, 23)
         self._label2.TabIndex = 4
         # 
         # button1
         # 
-        self._button1.Location = System.Drawing.Point(12, 129)
+        self._button1.Location = System.Drawing.Point(204, 12)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(138, 43)
         self._button1.TabIndex = 5
@@ -70,7 +74,7 @@ class MainForm(Form):
         # 
         # button2
         # 
-        self._button2.Location = System.Drawing.Point(12, 178)
+        self._button2.Location = System.Drawing.Point(204, 61)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(138, 39)
         self._button2.TabIndex = 6
@@ -80,7 +84,7 @@ class MainForm(Form):
         # 
         # button3
         # 
-        self._button3.Location = System.Drawing.Point(12, 223)
+        self._button3.Location = System.Drawing.Point(204, 122)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(138, 62)
         self._button3.TabIndex = 7
@@ -114,16 +118,35 @@ class MainForm(Form):
         # 
         # button4
         # 
-        self._button4.Location = System.Drawing.Point(200, 275)
+        self._button4.Location = System.Drawing.Point(332, 194)
         self._button4.Name = "button4"
         self._button4.Size = System.Drawing.Size(10, 10)
         self._button4.TabIndex = 11
         self._button4.UseVisualStyleBackColor = True
         self._button4.Click += self.Button4Click
         # 
+        # label6
+        # 
+        self._label6.Location = System.Drawing.Point(13, 140)
+        self._label6.Name = "label6"
+        self._label6.Size = System.Drawing.Size(100, 23)
+        self._label6.TabIndex = 12
+        self._label6.Text = "Root 1 = "
+        # 
+        # label7
+        # 
+        self._label7.Location = System.Drawing.Point(13, 181)
+        self._label7.Name = "label7"
+        self._label7.Size = System.Drawing.Size(100, 23)
+        self._label7.TabIndex = 13
+        self._label7.Text = "Root 2 ="
+        # 
         # MainForm
         # 
-        self.ClientSize = System.Drawing.Size(222, 297)
+        self.BackColor = System.Drawing.SystemColors.ControlDarkDark
+        self.ClientSize = System.Drawing.Size(354, 216)
+        self.Controls.Add(self._label7)
+        self.Controls.Add(self._label6)
         self.Controls.Add(self._button4)
         self.Controls.Add(self._label5)
         self.Controls.Add(self._label4)
@@ -147,8 +170,8 @@ class MainForm(Form):
         a = int(self._textBox1.Text)
         b = int(self._textBox2.Text)
         c = int(self._textBox3.Text)
-        root1 = (-b + math.sqrt(b ** 2) * -4 * a * c) / a * c
-        root2 = (-b - math.sqrt(b ** 2) * -4 * a * c) / a * c
+        root1 = (-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
+        root2 = (-b - math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
         self._label1.Text = str(root1)
         self._label2.Text = str(root2)
 

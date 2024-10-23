@@ -124,18 +124,12 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         price = float(self._textBox1.Text)
         recived = float(self._textBox2.Text)
-        giveback = recived - price
-        dollars = int(giveback // 1)
-        cents = float(giveback - dollars)
-        quarters = int(((cents) * 100) / 25)
-        qremaind = float(cents - (quarters / 100) * 25)
-        dimes = int((qremaind * 100) /10)
-        dremain = float(cents - (qremaind + ((dimes / 100) * 10)))
-        nickles = int((dremain * 100) / 5)
-        nremain = float(cents - (dremain + ((nickles/100) * 5)))
-        penneys = int(nremain * 100)
+        giveback = float(recived - price)
+        dollars = int(recived - price)
+        r1 = float(giveback - dollars)
+        quarters = int(r1 * 100) /25
+        r2 = float(r1 - float(quarters / 4))
+        dimes = 1
         self._label3.Text = str(dollars)
         self._label4.Text = str(quarters)
-        self._label5.Text = str(dimes)
-        self._label6.Text = str(nickles)
-        self._label7.Text = str(penneys)
+        self._label5.Text = str(r2)

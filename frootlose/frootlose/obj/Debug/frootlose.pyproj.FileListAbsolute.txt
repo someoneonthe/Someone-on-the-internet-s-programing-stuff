@@ -1,0 +1,10 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\frootlose.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\frootlose.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\frootlose.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\obj\Debug\frootlose.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\frootlose\frootlose\obj\Debug\frootlose.exe

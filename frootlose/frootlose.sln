@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "frootlose", "frootlose\frootlose.pyproj", "{B38F1007-2F1D-4846-9463-3D29F93F97A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B38F1007-2F1D-4846-9463-3D29F93F97A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B38F1007-2F1D-4846-9463-3D29F93F97A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B38F1007-2F1D-4846-9463-3D29F93F97A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B38F1007-2F1D-4846-9463-3D29F93F97A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
