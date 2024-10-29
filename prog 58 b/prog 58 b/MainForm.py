@@ -74,7 +74,7 @@ class MainForm(Form):
         # 
         # button2
         # 
-        self._button2.Location = System.Drawing.Point(204, 61)
+        self._button2.Location = System.Drawing.Point(204, 70)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(138, 39)
         self._button2.TabIndex = 6
@@ -84,7 +84,7 @@ class MainForm(Form):
         # 
         # button3
         # 
-        self._button3.Location = System.Drawing.Point(204, 122)
+        self._button3.Location = System.Drawing.Point(204, 121)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(138, 62)
         self._button3.TabIndex = 7

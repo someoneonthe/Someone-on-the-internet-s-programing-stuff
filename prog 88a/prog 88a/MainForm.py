@@ -291,9 +291,6 @@ class MainForm(Form):
        self._label11.Text = str(Max)
        self._label10.Text = str(Min)
 
-    def Button3Click(self, sender, e):
-        Application.Exit()
-
     def Button2Click(self, sender, e):
        self._label16.Text = ""
        self._label15.Text = ""
@@ -304,3 +301,6 @@ class MainForm(Form):
        self._label10.Text = ""
        self._textBox1.Text = ""
        self._textBox2.Text = ""
+       
+    def Button3Click(self, sender, e):
+        Application.Exit()

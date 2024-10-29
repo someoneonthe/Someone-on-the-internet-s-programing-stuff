@@ -1,5 +1,6 @@
 ﻿import System.Drawing
 import System.Windows.Forms
+import math
 
 from System.Drawing import *
 from System.Windows.Forms import *
@@ -17,8 +18,6 @@ class MainForm(Form):
         self._label3 = System.Windows.Forms.Label()
         self._label4 = System.Windows.Forms.Label()
         self._label5 = System.Windows.Forms.Label()
-        self._label6 = System.Windows.Forms.Label()
-        self._label7 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # label1
@@ -27,7 +26,7 @@ class MainForm(Form):
         self._label1.Name = "label1"
         self._label1.Size = System.Drawing.Size(100, 23)
         self._label1.TabIndex = 0
-        self._label1.Text = "label1"
+        self._label1.Text = "price"
         # 
         # textBox1
         # 
@@ -40,9 +39,9 @@ class MainForm(Form):
         # 
         self._label2.Location = System.Drawing.Point(12, 62)
         self._label2.Name = "label2"
-        self._label2.Size = System.Drawing.Size(100, 23)
+        self._label2.Size = System.Drawing.Size(100, 31)
         self._label2.TabIndex = 2
-        self._label2.Text = "label2"
+        self._label2.Text = "givin"
         # 
         # textBox2
         # 
@@ -79,33 +78,15 @@ class MainForm(Form):
         # 
         # label5
         # 
-        self._label5.Location = System.Drawing.Point(13, 228)
+        self._label5.Location = System.Drawing.Point(12, 243)
         self._label5.Name = "label5"
         self._label5.Size = System.Drawing.Size(100, 23)
         self._label5.TabIndex = 7
         self._label5.Text = "label5"
         # 
-        # label6
-        # 
-        self._label6.Location = System.Drawing.Point(13, 266)
-        self._label6.Name = "label6"
-        self._label6.Size = System.Drawing.Size(100, 23)
-        self._label6.TabIndex = 8
-        self._label6.Text = "label6"
-        # 
-        # label7
-        # 
-        self._label7.Location = System.Drawing.Point(12, 304)
-        self._label7.Name = "label7"
-        self._label7.Size = System.Drawing.Size(100, 23)
-        self._label7.TabIndex = 9
-        self._label7.Text = "label7"
-        # 
         # MainForm
         # 
         self.ClientSize = System.Drawing.Size(499, 451)
-        self.Controls.Add(self._label7)
-        self.Controls.Add(self._label6)
         self.Controls.Add(self._label5)
         self.Controls.Add(self._label4)
         self.Controls.Add(self._label3)
@@ -124,12 +105,15 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         price = float(self._textBox1.Text)
         recived = float(self._textBox2.Text)
-        giveback = float(recived - price)
+        giveback = recived - price
         dollars = int(recived - price)
-        r1 = float(giveback - dollars)
-        quarters = int(r1 * 100) /25
-        r2 = float(r1 - float(quarters / 4))
-        dimes = 1
+        quarters = giveback - dollars
+        aq = round((quarters/ 25) * 100)
+        mq = (aq*25) / 100
+        dimes = giveback - dollars - mq
+        ad = round((dimes * 100) / 10)
+        md = (ad / 100) * 10
+        nickles = 1
         self._label3.Text = str(dollars)
-        self._label4.Text = str(quarters)
-        self._label5.Text = str(r2)
+        self._label4.Text = str(aq)
+        self._label5.Text = str(ad)
