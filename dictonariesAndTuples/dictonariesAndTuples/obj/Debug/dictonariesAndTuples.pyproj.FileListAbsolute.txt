@@ -1,0 +1,10 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\obj\Debug\dictonariesAndTuples.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\dictonariesAndTuples.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\dictonariesAndTuples.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\dictonariesAndTuples.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\dictonariesAndTuples\dictonariesAndTuples\obj\Debug\dictonariesAndTuples.exe

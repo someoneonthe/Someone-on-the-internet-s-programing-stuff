@@ -18,6 +18,7 @@ class MainForm(Form):
         self._label3 = System.Windows.Forms.Label()
         self._label4 = System.Windows.Forms.Label()
         self._label5 = System.Windows.Forms.Label()
+        self._label6 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # label1
@@ -78,15 +79,24 @@ class MainForm(Form):
         # 
         # label5
         # 
-        self._label5.Location = System.Drawing.Point(12, 243)
+        self._label5.Location = System.Drawing.Point(12, 226)
         self._label5.Name = "label5"
         self._label5.Size = System.Drawing.Size(100, 23)
         self._label5.TabIndex = 7
         self._label5.Text = "label5"
         # 
+        # label6
+        # 
+        self._label6.Location = System.Drawing.Point(12, 268)
+        self._label6.Name = "label6"
+        self._label6.Size = System.Drawing.Size(100, 23)
+        self._label6.TabIndex = 8
+        self._label6.Text = "label6"
+        # 
         # MainForm
         # 
         self.ClientSize = System.Drawing.Size(499, 451)
+        self.Controls.Add(self._label6)
         self.Controls.Add(self._label5)
         self.Controls.Add(self._label4)
         self.Controls.Add(self._label3)
@@ -112,8 +122,10 @@ class MainForm(Form):
         mq = (aq*25) / 100
         dimes = giveback - dollars - mq
         ad = round((dimes * 100) / 10)
-        md = (ad / 100) * 10
-        nickles = 1
+        md = (ad *10) /100
+        nickles = giveback - dollars - mq - md
+        an = round((nickles * 100) / 5)
         self._label3.Text = str(dollars)
         self._label4.Text = str(aq)
         self._label5.Text = str(ad)
+        self._label6.Text = str(an)

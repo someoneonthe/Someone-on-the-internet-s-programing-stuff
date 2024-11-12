@@ -1,0 +1,10 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\obj\Debug\prog 52a class.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\prog 52a class.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\prog 52a class.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\prog 52a class.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 52a class\prog 52a class\obj\Debug\prog 52a class.exe

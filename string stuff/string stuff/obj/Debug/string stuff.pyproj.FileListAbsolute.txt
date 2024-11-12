@@ -1,0 +1,10 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\string stuff.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\string stuff.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\string stuff.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\obj\Debug\string stuff.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\string stuff\string stuff\obj\Debug\string stuff.exe

@@ -1,0 +1,10 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\prog54aDict.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\prog54aDict.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\prog54aDict.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\obj\Debug\prog54aDict.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog54aDict\prog54aDict\obj\Debug\prog54aDict.exe
