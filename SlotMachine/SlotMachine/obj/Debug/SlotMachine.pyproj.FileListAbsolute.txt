@@ -1,0 +1,12 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\obj\Debug\SlotMachine.MainForm.resources
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\obj\Debug\SlotMachine.pyproj.GenerateResource.Cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\SlotMachine.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\SlotMachine.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\SlotMachine.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\SlotMachine\SlotMachine\obj\Debug\SlotMachine.exe

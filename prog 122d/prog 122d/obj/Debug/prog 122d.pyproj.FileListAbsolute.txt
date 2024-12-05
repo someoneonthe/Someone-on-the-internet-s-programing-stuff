@@ -1,0 +1,12 @@
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\prog 122d.exe.config
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\prog 122d.exe
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\prog 122d.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\IronPython.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\IronPython.Modules.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\Microsoft.Scripting.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\obj\Debug\prog 122d.pyprojResolveAssemblyReference.cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\obj\Debug\prog_122d.MainForm.resources
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\obj\Debug\prog 122d.pyproj.GenerateResource.Cache
+C:\Users\mullen.n\Desktop\Someone on the internet's programing stuff\prog 122d\prog 122d\obj\Debug\prog 122d.exe
