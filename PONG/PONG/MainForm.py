@@ -12,9 +12,11 @@ class MainForm(Form):
         self.balld = 0
         self.flagleft = False
         self.flagright = False
+        self._eh == 0
     
     def InitializeComponent(self):
         self._components = System.ComponentModel.Container()
+        resources = System.Resources.ResourceManager("PONG.MainForm", System.Reflection.Assembly.GetEntryAssembly())
         self._lbltitle = System.Windows.Forms.Label()
         self._leftscore = System.Windows.Forms.Label()
         self._rightscore = System.Windows.Forms.Label()
@@ -26,9 +28,10 @@ class MainForm(Form):
         self._timerleft = System.Windows.Forms.Timer(self._components)
         self._timerball = System.Windows.Forms.Timer(self._components)
         self._timermulti = System.Windows.Forms.Timer(self._components)
-        self._pd1 = System.Windows.Forms.Timer(self._components)
         self._timerboolean = System.Windows.Forms.Timer(self._components)
-        self._pdlTick = System.Windows.Forms.Timer(self._components)
+        self._pictureBox1 = System.Windows.Forms.PictureBox()
+        self._eh = System.Windows.Forms.Label()
+        self._pictureBox1.BeginInit()
         self.SuspendLayout()
         # 
         # lbltitle
@@ -40,7 +43,7 @@ class MainForm(Form):
         self._lbltitle.Name = "lbltitle"
         self._lbltitle.Size = System.Drawing.Size(958, 52)
         self._lbltitle.TabIndex = 0
-        self._lbltitle.Text = "Press Enter to start or M to start multiplayer"
+        self._lbltitle.Text = "Press Enter to start or M to start multiplayer Q to exit"
         self._lbltitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
         # leftscore
@@ -111,30 +114,48 @@ class MainForm(Form):
         # 
         self._timermulti.Interval = 20
         # 
-        # pd1
-        # 
-        self._pd1.Interval = 20
-        self._pd1.Tick += self.Pd1Tick
-        # 
         # timerboolean
         # 
         self._timerboolean.Interval = 20
+        # 
+        # pictureBox1
+        # 
+        self._pictureBox1.BackgroundImage = resources.GetObject("pictureBox1.BackgroundImage")
+        self._pictureBox1.Location = System.Drawing.Point(78, 208)
+        self._pictureBox1.Name = "pictureBox1"
+        self._pictureBox1.Size = System.Drawing.Size(790, 371)
+        self._pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        self._pictureBox1.TabIndex = 6
+        self._pictureBox1.TabStop = False
+        self._pictureBox1.Visible = False
+        # 
+        # eh
+        # 
+        self._eh.Location = System.Drawing.Point(12, 25)
+        self._eh.Name = "eh"
+        self._eh.Size = System.Drawing.Size(100, 23)
+        self._eh.TabIndex = 7
+        self._eh.Text = "label1"
+        self._eh.Visible = False
         # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Black
         self.ClientSize = System.Drawing.Size(988, 607)
+        self.Controls.Add(self._eh)
         self.Controls.Add(self._lblright)
         self.Controls.Add(self._lblleft)
         self.Controls.Add(self._lblball)
         self.Controls.Add(self._rightscore)
         self.Controls.Add(self._leftscore)
         self.Controls.Add(self._lbltitle)
+        self.Controls.Add(self._pictureBox1)
         self.Name = "MainForm"
         self.Text = "PONG"
         self.Load += self.MainFormLoad
         self.SizeChanged += self.MainFormSizeChanged
         self.KeyDown += self.MainFormKeyDown
+        self._pictureBox1.EndInit()
         self.ResumeLayout(False)
 
     def TimerballTick(self, sender, e):
@@ -149,16 +170,10 @@ class MainForm(Form):
         if ball.Right >= rpdl.Right and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
             self.balld = -1
             self.ballup = self.R.Next (-4, 5)
-        elif ball.Left >= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
+        elif ball.Left <= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
             self.balld = 1
             self.ballup = self.R.Next(-4, 5)
-        
-        if ball.Top <= 0:
-            self.balld = 1
-            self.Top += 5 * self.balld
-        elif ball.Bottom >= self.Height:
-            self.balld = 1
-            self.Top += 5 * self.balld
+       
             
         if ball.Top <= self.Top + 10:
             self.ballup = 1
@@ -167,14 +182,14 @@ class MainForm(Form):
             
         if ball.Top <= 0:
             self.ballup = 1
-        elif ball.Top >= self.Hight - 50:
+        elif ball.Top >= self.Height - 50:
             self.ballup = -1
             
         if ball.Location.X <= 0 or \
             (ball.Location.X < lpdl.Left -20 and ball.Location.Y < lpdl.Top):
                 rscore += 1
-                self._rightscore.Text = str(lscore)
-                ball.right = self.Width // 2
+                self._rightscore.Text = str(rscore)
+                ball.Left = self.Width // 2
                 ball.Top = self.Height // 2
                 
                 
@@ -201,9 +216,19 @@ class MainForm(Form):
             self._lbltitle.Text = "Right Player Wins! Press R to restart"
             self._lbltitle.Visible = True
             
-            
         if self._timerboolean.Enabled:
-            lpdl.Top = ball.Top - 20
+                if ball.Top < lpdl.Top - 20:
+                    lpdl.Top = lpdl.Top - 3
+                elif ball.Top > lpdl.Top + 70:
+                    lpdl.Top = lpdl.Top + 3
+                    
+                if self._eh == 1:
+                    if ball.Top < lpdl.Top - 5:
+                        lpdl.Top = lpdl.Top - 10
+                    elif ball.Top > lpdl.Top + 95:
+                        lpdl.Top = lpdl.Top + 10
+                
+                    
         pass
 
     def MainFormKeyDown(self, sender, e):
@@ -234,11 +259,19 @@ class MainForm(Form):
             lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
             rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
             """ todo; reset secrets"""
-            bl.backColor = Color.White
+            bl.BackColor = Color.White
             
         if e.KeyCode == Keys.R:
             reset()
             
+        if e.KeyCode == Keys.Q:
+            Application.Exit()
+            
+        if e.KeyCode == Keys.H:
+            self._eh == 1
+            
+        if e.KeyCode == Keys.E:
+            self._pictureBox1.Visible = True
             
         if e.KeyCode == Keys.Enter:
             tball.Enabled = True
@@ -261,9 +294,11 @@ class MainForm(Form):
             """todo: Finish multiPlayer"""
             if tmult.Enabled and tball.Enabled:
                 if e.KeyCode == Keys.W:
-                    pass
+                    self.flagleft = False
+                    tleft.Enabled = True
                 if e.KeyCode == Keys.S:
-                    pass
+                    self.flagleft = True
+                    tleft.Enabled = True
         pass
 
     def MainFormLoad(self, sender, e):
@@ -271,20 +306,19 @@ class MainForm(Form):
         self.balld = 1
         self.ballup = self.R.Next(-4,5)
         
-    def pdlTick(self, sender, e):
+    def pdlTick(self, pdl, flagd, tmr):
         if flagd == True:
             pdl.Top += 5
         else:
             pdl.Top -= 5
-        if pdl.Top < 10 or pdl.Bottom >= self.Hight -50:
+        if pdl.Top <= 10 or pdl.Bottom >= self.Height - 50:
             tmr.Enabled = False
-   
-    
-    def TimerleftTick(self, sender, e):
-        self.pdlTick(self._lblleft, self.flagleft, self._timerleft)
-        
+
     def TimerrightTick(self, sender, e):
         self.pdlTick(self._lblright, self.flagright, self._timerright)
+        
+    def TimerleftTick(self, sender, e):
+        self.pdlTick(self._lblleft, self.flagleft, self._timerleft)
 
     def LblballClick(self, sender, e):
         self._lblball.BackColor = Color.Red
@@ -296,5 +330,3 @@ class MainForm(Form):
         self._lbltitle.Width = self.Width- 25
         self._lblball.Left = self.Width // 2
         self._lblball.Top = self.Height // 2
-
-    
